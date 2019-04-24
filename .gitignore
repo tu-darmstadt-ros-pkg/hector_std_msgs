@@ -1,0 +1,23 @@
+.idea/
+cmake-build-*/
+.ipynb_checkpoints/
+.vscode
+
+# Latex
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.lof
+*.log
+*.lot
+*.out
+thesis/*.pdf
+*.synctex.gz
+*.run.xml
+*.toc
+*.fdb_latexmk
+*.fls
+
+# QML
+*.qmlc
