@@ -5,7 +5,7 @@ project(hector_std_msgs)
 # add_compile_options(-std=c++11)
 
 ## Find catkin macros and libraries
-find_package(catkin REQUIRED COMPONENTS message_generation)
+find_package(catkin REQUIRED COMPONENTS message_generation geometry_msgs)
 
 ################################################
 ## Declare ROS messages, services and actions ##
@@ -41,6 +41,8 @@ find_package(catkin REQUIRED COMPONENTS message_generation)
 ## Generate services in the 'srv' folder
 add_service_files(
   FILES
+  GetPoseArrayService.srv
+  PoseService.srv
   StringService.srv
 #   Service2.srv
 )
@@ -54,7 +56,7 @@ add_service_files(
 
 ## Generate added messages and services with any dependencies listed here
 generate_messages(
-  DEPENDENCIES
+  DEPENDENCIES geometry_msgs
 #   std_msgs  # Or other packages containing msgs
 )
 
@@ -70,7 +72,7 @@ generate_messages(
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES hector_std_msgs
- CATKIN_DEPENDS message_runtime
+ CATKIN_DEPENDS message_runtime geometry_msgs
 #  DEPENDS system_lib
 )
 
