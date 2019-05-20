@@ -42,6 +42,7 @@ find_package(catkin REQUIRED COMPONENTS message_generation geometry_msgs)
 add_service_files(
   FILES
   GetPoseArrayService.srv
+  Int32Service.srv
   PoseService.srv
   StringService.srv
 #   Service2.srv
