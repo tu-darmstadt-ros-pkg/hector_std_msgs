@@ -43,6 +43,7 @@ add_service_files(
   GetPoseArrayService.srv
   Int32Service.srv
   PoseService.srv
+  PointArrayService.srv	
   StringService.srv
 #   Service2.srv
 )
